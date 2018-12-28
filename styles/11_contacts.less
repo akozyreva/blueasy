@@ -1,0 +1,58 @@
+.stn-contact {
+    &:extend(.stn-padding);
+    .bg-img('contacts.jpg');
+    color: #fff;
+    font-family: "SegoeUI-Bold";
+
+    p {
+    	margin-top: 20px;
+        font-family: "SegoeUI-SemiBold";
+    }
+}
+
+.frm-group {
+    margin-bottom: 35px;
+
+    label {
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+
+.frm-control {
+    //значит, фон прозрачный
+    background-color: transparent;
+    border: 2px white solid;
+    width: 100%;
+    height: 60px;
+}
+
+//это значит, что если текстареа имеет класс frm-control, то...
+textarea.frm-control {
+    height: 215px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: @accent;
+    border: none;
+    color: inherit;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 25px 0;
+    cursor: pointer; //хак для ховера
+    border: 2px solid @accent;
+    transition: all .3s ease-in-out; //а при наведении мы убираем бакгроунд
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+input[type="text"],input[type="email"],textarea{
+	color: white;
+	padding-left: 10px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}

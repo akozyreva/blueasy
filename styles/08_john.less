@@ -1,0 +1,30 @@
+.stn-about {
+    &:extend(.stn-padding);
+    .bg-img('john.jpg');
+    color: #fff;
+    //мой вариант не такой удачный - в нем квадраты вышли разных размеров
+    a{
+    	text-decoration: none;
+    	color: white;
+    	font-size: 30px;
+    	border: 2px solid white;
+    	padding: 10px 15px;
+    	margin-right: 20px;
+    	text-align: center;
+    	//добавляет плавности анимации
+    	transition: all .3s ease-in-out;
+
+    	&:last-child{
+    		margin-right: 0;
+    	}
+
+    	&:hover{
+    		color: @accent;
+    		border-color: @accent;
+    	}
+    }
+}
+@media(max-width: 992px){
+    .stn-about a{
+        padding: 0 !important;
+    }}
