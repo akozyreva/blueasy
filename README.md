@@ -5,7 +5,7 @@ https://akozyreva.github.io/blueasy
 This is simple static site, which I made while was learning as front-end developer.
 Tools, which were used:
 - Gulp
-- Stylus
+- LESS
 - Pug
 - Jquery
 - Brootstrap
